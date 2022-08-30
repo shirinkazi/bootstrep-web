@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contact</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+ 
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+ 
+</head>
+<body>
+	<div class="container pt-5">
+		<div class="row justify-content-evenly pb-5">
+			<h1 align="center">Log In</h1>
+			<p align="center" > don't have an account <a href="#" style="text-decoration-line: none;"> Sign Up</a ></p>
+			<div class="col-xl-6 col-sm-12 col-lg-6  col-sm-6">
+				
+				<form><div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email" id="pass">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">pssword</label>
+  <input type="password" class="form-control" id="exampleFormControlInput1" onclick="on()"  placeholder="password">
+</div>
+<div class="mb-3">
+	 
+    
+    <input type="checkbox" name="text" onclick="on()" placeholder="forget email" >remember me  <br><code style="color: blue;">forget password or email?</code>
+    <br><br>
+    
+     <a class="btn bg-white border border-primary btn-md mt-2 text-primary " href="contactform.html" role="button" onclick="alert('your form successfully..')">loge in</a>
+
+</div>
+	</form>
+</div>
+	
+
+
+<div class="col-xl-6 col-sm-12 col-lg-6  col-sm-6 pt-3">
+	<a href="#" class="fb btn border border-primary bg-primary" style="width: 70%;">
+		<i class="bi bi-facebook text-white " style="text-transform: uppercase; font-size: 15px;">  login with facebook  </i>
+	</a><br> <br>
+	<a href="#" class="fb btn border border-primary bg-primary active" style="width:70%;">
+		<i class="bi bi-apple text-white" style="text-transform: uppercase; font-size: 15px;">   login with apple  </i>
+	</a><br><br>
+	<a href="#" class="fb btn border border-primary bg-white"  active style="width: 70%;">
+	<i class="bi bi-google text-primary" style="text-transform: uppercase; font-size: 15px;">  login with google  </i>
+	</a>
+	<br><br>
+	<p class="ps-2" style="margin-left: 150px;">continue with sso</p>
+</div>
+		</div>
+	</div>	
+
+</body>
+<script type="text/javascript">
+function on() {
+	// body...  
+	var a=document.getElementById('pass')
+	if(a.type=="password"){
+		a.type="text"
+	}
+	else{
+		a.type="password"
+	}
+}
+
+
+
+</script>
+
+</html>
